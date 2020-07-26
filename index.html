@@ -7,13 +7,13 @@
     <title>CV</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/fa5.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
 <body data-spy="scroll" data-target="#fixed-nav">
-
     <!-- Bootstrap 4 scrollspy nav -->
     <div class="myNav">
         <div class="show-nav-btn">
@@ -51,22 +51,26 @@
 
 
     <!-- about -->
-    <section id="fat" data-aos="fade-left" class="about">
+    <section id="fat" class="about">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-                    <div class="w-75">
+                    <div class="w-75 wow animate__animated animate__fadeInLeft">
                         <h2>About this website</h2>
                         <br>
-                        <p>This website was created to serve my job search.
+                        <p>This website was
+                            created to serve my job search.
                             It is inspired by various sources,
-                            i placed the sources in the footer section.<br>
+                            i placed the sources in the footer section.
+                            And you can click the image to view my online CV.<br>
                             That's all, feel free and keep scrolling.</p>
                     </div>
 
                 </div>
-                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                    <img class="w-75" src="./images/about.svg" alt="">
+                <div class=" col-12 col-md-6 d-flex align-items-center justify-content-center">
+                    <a class="w-75" href="https://www.topcv.vn/xem-cv/a679c1d94fa464147869f761da4fa110" target="_blank">
+                        <img class="w-100 wow animate__animated animate__fadeInRight" src="./images/about.svg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -75,7 +79,7 @@
 
 
     <!-- intro -->
-    <section id="intro" data-aos="fade-right" class="intro">
+    <section id="intro" class="intro">
         <div class="d-flex h-100 justify-content-center align-items-center">
             <div class="w-50 d-flex flex-column justify-content-center align-items-center text-center">
                 <h2>Hi.</h2>
@@ -83,7 +87,7 @@
                     <img class="w-100" src="./images/profile.svg" alt="">
                     <img class="w-100" src="./images/pc.svg" alt="">
                 </div>
-                <p class="">My full name is Pham Viet Hung, I'm 23 years old.
+                <p class="wow animate__animated animate__fadeIn">My full name is Pham Viet Hung, I'm 23 years old.
                     I have just graduated from University in June
                     with the major in Information Technology.
                     I'm a careful and hard working person,
@@ -96,39 +100,39 @@
 
 
     <!-- Technical skill -->
-    <section id="tech" data-aos="fade-left" class="technical-skill">
+    <section id="tech" class="technical-skill">
         <div class="container h-100">
             <div class="row h-100">
                 <h2 class="text-center w-100">Technical Skills</h2>
                 <div class="col-12 col-md-5 d-flex flex-column align-items-center left-col">
                     <p>HTML/CSS</p>
-                    <div class="progress w-75">
-                        <div class="progress-bar w-75"></div>
+                    <div class="pg-bar">
+                        <div class="pg-bar__percent wow animate__animated animate__flash"></div>
                     </div>
                     <br />
                     <p>JavaScript</p>
-                    <div class="progress w-75">
-                        <div class="progress-bar w-75"></div>
+                    <div class="pg-bar">
+                        <div class="pg-bar__percent wow animate__animated animate__flash"></div>
                     </div>
                     <br />
                     <p>SCSS</p>
-                    <div class="progress w-75">
-                        <div class="progress-bar w-75"></div>
+                    <div class="pg-bar">
+                        <div class="pg-bar__percent wow animate__animated animate__flash"></div>
                     </div>
                     <br />
                     <p>React</p>
-                    <div class="progress w-75">
-                        <div class="progress-bar w-75"></div>
+                    <div class="pg-bar">
+                        <div class="pg-bar__percent wow animate__animated animate__flash"></div>
                     </div>
                     <br />
                     <p>Git</p>
-                    <div class="progress w-75">
-                        <div class="progress-bar w-75"></div>
+                    <div class="pg-bar">
+                        <div class="pg-bar__percent wow animate__animated animate__flash"></div>
                     </div>
                     <br />
                     <p>English</p>
-                    <div class="progress w-75">
-                        <div class="progress-bar w-75"></div>
+                    <div class="pg-bar">
+                        <div class="pg-bar__percent wow animate__animated animate__flash"></div>
                     </div>
                     <h6 class="w-75 font-italic font-weight-light mt-4">*This progress bar is just for decoration,
                         it's
@@ -137,7 +141,7 @@
                         For more details visit my online cv (link at the footer section)</h6>
                 </div>
                 <div class="col-12 col-md-7 d-none d-md-flex align-items-center justify-content-center ">
-                    <img class="w-75" src="./images/abilities.svg" alt="">
+                    <img class="w-75 wow animate__animated animate__fadeInRight" src="./images/abilities.svg" alt="">
                 </div>
             </div>
         </div>
@@ -146,27 +150,33 @@
 
 
     <!-- other-skill -->
-    <section id="other" data-aos="fade-up-right" class="other-skill">
+    <section id="other" class="other-skill">
         <h2 class="text-center">Other Skills</h2>
         <div class="container text-center d-flex flex-column justify-content-around">
             <div class="row">
-                <div class="col-6">
-                    <img src="./images/independently.svg" alt="">
-                    <p>Work independently</p>
+                <div class="col-6 wow animate__animated animate__lightSpeedInRight">
+                    <img data-toggle="tooltip" data-placement="top" title="
+                    I have the ability to work independently, just give me the job, i will try to finish it on time"
+                        class="red-tooltip" src="./images/independently.svg" alt="">
+                    <p>independent working</p>
                 </div>
-                <div class="col-6">
-                    <img src="./images/team.svg" alt="">
+                <div class="col-6 wow animate__animated animate__lightSpeedInLeft">
+                    <img data-toggle="tooltip" data-placement="top" title="
+                    I have good teamwork skills, 
+                    I am willing to cooperate, share and learn from other members" src="./images/team.svg" alt="">
                     <p>Team-working</p>
 
                 </div>
             </div>
             <div class="row mt-3">
-                <div class="col-6">
-                    <img src="./images/english.svg" alt="">
+                <div class="col-6 wow animate__animated animate__lightSpeedInRight">
+                    <img data-toggle="tooltip" data-placement="top" title="
+                    I can read professional document in English, 
+                    i have a TOEIC 690 points certificate" src="./images/english.svg" alt="">
                     <p>English</p>
 
                 </div>
-                <div class="col-6">
+                <div class="col-6 wow animate__animated animate__lightSpeedInLeft">
                     <img src="./images/problem.svg" alt="">
                     <p>Problem-solving skill</p>
 
@@ -185,19 +195,28 @@
 
 
     <!-- contact -->
-    <section id="contact" data-aos="fade-up-left" class="contact">
+    <section id="contact" class="contact">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <h2 class="text-center w-100 align-self-start">Contact me</h2>
-                <div class="col-12 col-md-7 d-flex justify-content-center align-self-start">
+                <div
+                    class="col-12 col-md-7 d-flex justify-content-center align-self-start wow animate__animated animate__fadeInLeft">
                     <img class="w-100" src="./images/contact.svg" alt="">
                 </div>
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-md-5 wow animate__animated animate__fadeInRight">
                     <div class="text-center">
                         <p>I am currently looking for a job.<br />
                             Contact me via</p>
-                        <a href="mailto:pv2hung97@gmail.com" class="btn">Email</a>
-                        <a href="https://www.facebook.com/hung.xu.97" target="_blank" class="btn">Facebook</a>
+                        <div class="d-flex justify-content-center">
+                            <a href="mailto:pv2hung97@gmail.com" class="btn">
+                                <ion-icon name="mail">fds</ion-icon>
+                                Email
+                            </a>
+                            <a href="https://www.facebook.com/hung.xu.97" target="_blank" class="btn">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                                Facebook
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -207,10 +226,10 @@
 
 
     <!-- thanks -->
-    <section data-aos="fade-left" class="thanks">
+    <section class="thanks wow animate__animated animate__fadeInRight">
         <h2 class="text-center">Thank You !!!</h2>
         <div class="text-center d-flex flex-column align-items-center">
-            <p class="my-5">It's been a long time <br />Thanks for taking your time to visit my
+            <p class="my-5">It's quite long, isn't it? <br />Thanks for taking your time to visit my
                 website.
             </p>
             <h2>Have a nice day</h2>
@@ -222,7 +241,7 @@
     <!-- end thanks -->
 
 
-    <footer data-aos="fade-up-left" class="footer d-flex align-items-center">
+    <footer class="footer d-flex align-items-center">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4 text-center">
@@ -234,9 +253,18 @@
                 </div>
                 <div class="col-12 col-md-4 order-2 order-md-1">
                     <ul class="mt-5">
-                        <li><a href="https://www.facebook.com/hung.xu.97" target="_blank">Facebook</a></li>
-                        <li><a href="#" target="_blank">My CV</a></li>
-                        <li><a href="https://github.com/hungxu97" target="_blank">Github</a></li>
+                        <li><a href="https://www.facebook.com/hung.xu.97" target="_blank">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                                Facebook
+                            </a></li>
+                        <li><a href="https://www.topcv.vn/xem-cv/a679c1d94fa464147869f761da4fa110" target="_blank">
+                                <ion-icon name="document-attach"></ion-icon>
+                                CV
+                            </a></li>
+                        <li><a href="https://github.com/hungxu97" target="_blank">
+                                <ion-icon name="logo-github"></ion-icon>
+                                Github
+                            </a></li>
                     </ul>
                     <p>
                         © 2020 Pham Viet Hung.<br />
@@ -257,8 +285,12 @@
 
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/aos.js"></script>
+    <script src="./js/wow.min.js"></script>
     <script src="./js/main.js"></script>
+
+    <!-- ion icons -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
 </body>
 
 </html>

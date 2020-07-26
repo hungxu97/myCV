@@ -6,7 +6,7 @@
 }
 
 html {
-  font-size: 87.5%;
+  font-size: 62.5%;
 }
 
 body {
@@ -18,7 +18,7 @@ section {
   height: 100vh;
   padding: 30px 0;
 }
-
+/* ======== REUSABLE ========*/
 h1,
 h2,
 h3,
@@ -35,6 +35,22 @@ h2 {
   font-size: 2.5rem;
   letter-spacing: 0.15rem;
   font-weight: 600;
+}
+
+ion-icon {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.tooltip-inner {
+  background: var(--color-black) !important;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^='top'] .arrow::before,
+.tooltip.bs-tooltip-top .arrow::before {
+  border-top-color: var(--color-black) !important;
 }
 
 /* ======== OVERWIRE DEFAULT STYLE OF B4 LIST ======== */
@@ -124,6 +140,18 @@ h2 {
   animation: upAndDownEffect 2s alternate infinite;
 }
 
+.header span {
+  color: var(--color-red);
+}
+
+/*  ========= ABOUT ======== */
+.about img {
+  transition: transform 0.5s;
+}
+.about img:hover {
+  transform: scale(1.1);
+}
+
 /*  ========= INTRO ======== */
 .intro {
   background: url(../images/bg2.svg);
@@ -140,7 +168,7 @@ h2 {
 
 .intro__img-box img {
   margin: 10px 0;
-  animation: moveUp 10s alternate infinite;
+  animation: moveUp 10s linear alternate infinite;
 }
 
 /*  ========= TECHNICAL ======== */
@@ -156,12 +184,39 @@ h2 {
   max-height: 80%;
 }
 
+.technical-skill img {
+  display: inline-block;
+}
+
+.pg-bar {
+  width: 70%;
+  height: 20px;
+  border: 1px solid var(--color-black);
+  border-radius: 5px;
+}
+
+.pg-bar__percent {
+  height: 100%;
+  width: 0%;
+  background: var(--color-blue);
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInDown {
+  to {
+    transform: scale(1.5);
+  }
+}
+
 /*  ========= OTHER-SKILL ========= */
 .other-skill img {
   width: 10rem;
   height: 10rem;
   object-fit: contain;
+  transition: transform 1s;
+  cursor: pointer;
 }
+
 /*  ========= PROJECTS ========= */
 .projects {
   border: 1px solid;
@@ -187,22 +242,48 @@ h2 {
 
 /*  ========= CONTACT ========= */
 .contact a {
-  width: 150px;
+  width: 140px;
   border-radius: 5px;
   color: var(--color-white);
+  transition: all 0.25s;
 }
 
 .contact a:focus {
   box-shadow: none;
 }
 
+.contact a:hover {
+  transform: translateY(-5px);
+}
+
+.contact a:active {
+  transform: translateY(-2px);
+}
+
 .contact a:nth-of-type(1) {
   background: var(--color-red);
-  margin-right: 1rem;
+  margin: 0 5px;
+}
+
+.contact a:nth-of-type(1):hover {
+  box-shadow: 5px 5px 10px var(--color-red);
+}
+
+.contact a:nth-of-type(1):active {
+  box-shadow: 2px 2px 5px var(--color-red);
 }
 
 .contact a:nth-of-type(2) {
   background: var(--color-blue);
+  margin: 0 5px;
+}
+
+.contact a:nth-of-type(2):hover {
+  box-shadow: 5px 5px 10px var(--color-blue);
+}
+
+.contact a:nth-of-type(2):active {
+  box-shadow: 2px 2px 5px var(--color-blue);
 }
 
 /*  ========= FOOTER ========= */
@@ -240,13 +321,23 @@ h2 {
 }
 
 /*  ========= Responsive ========= */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   html {
-    font-size: 100%;
+    font-size: 87.5%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+
   .myNav {
     transform: translateX(0);
   }
@@ -289,11 +380,14 @@ h2 {
 }
 
 @keyframes moveUp {
-  from {
-    transform: translateY(0);
-  }
-
   to {
     transform: translateY(-150px);
+  }
+}
+
+@keyframes flash {
+  /* overwrite animate.css keyframe */
+  to {
+    width: 80%;
   }
 }
